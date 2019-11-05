@@ -93,6 +93,27 @@ public class MultiplyNGTest {
         assertEquals(result, expResult);
     }
 
+    @Test
+    public  void testMultiply5() {
+        System.out.println("multiply5");
+        float aaa = 9.2f;
+        double bbb = 2.22;
+        String a = String.valueOf(aaa);
+        String b = String.valueOf(bbb);
+        String expResult = String.valueOf(aaa + bbb);
+        String result = Multiply.multiply(a, b);
+        assertEquals(result, expResult);
+    }
 
-
+    @Test
+    public  void testMultiply6() {
+        System.out.println("multiply6");
+        double aaa = 9.2;
+        float bbb = 2.22f;
+        String a = String.valueOf(aaa);
+        String b = String.valueOf(bbb);
+        String expResult = String.valueOf(aaa + bbb);
+        String result = Multiply.multiply(a, b);
+        assertEquals(result, expResult);
+    }
 }
