@@ -24,7 +24,11 @@ public class Multiply {
             String result = decimalFormat.format(Float.valueOf(s));
             return result;
         }
-
+        if (bb % 1 == 0) {
+            DecimalFormat decimalFormat = new DecimalFormat("#.##");
+            String result = decimalFormat.format(Float.valueOf(s));
+            return result;
+        }
 
         return s;
 
